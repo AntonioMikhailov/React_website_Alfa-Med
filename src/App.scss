@@ -1,0 +1,31 @@
+@import './assets/css/params.scss';
+@import './components/Header/Header.scss';
+
+// компоненты 
+@import './components/ExpertDoctors/ExpertDoctors.scss';
+@import './components/Depart/Depart.scss';
+@import './components/Schedule/Schedule.scss';
+@import './components/HiSpecial/HiSpecial.scss';
+@import './components/Slider/SlickSlider.scss';
+@import './components/Slider/SliderStyles.scss';
+@import './components/Comments/Comments.scss';
+@import './components/ContactsComponent/ContactsComponent.scss';
+@import './components/BreadCrumbsNav/BreadCrumbsNav.scss';
+ 
+
+// страницы 
+@import './pages/Home/Home.scss';
+@import './pages/About/About.scss';
+@import './pages/Departments/Departments.scss';
+@import './pages/DepartSingle/DepartSingle.scss';
+@import './pages/Doctors/Doctors.scss';
+@import './pages/DoctorsSingle/DoctorsSingle.scss';
+@import './pages/Contacts/Contacts.scss';
+
+// footer  
+@import './components/S10Footer/S10Footer.scss';
+
+ 
+
+
+ 

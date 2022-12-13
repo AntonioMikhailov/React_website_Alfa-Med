@@ -1,0 +1,134 @@
+ 
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list {
+    position: relative;
+   display: block;
+    overflow: hidden;
+    margin: 0px 0px 40px 0px;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slide
+{
+    display: none;
+    float: left;  
+   height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+/* Arrows */
+.slick-prev,.slick-next{
+    font-size: 0; /*нужен иначе текст появится Prev-Next*/
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+  
+    background-color: transparent;
+    z-index: 20;
+    transition: all 0.3s ease .0s;
+}
+.slick-prev {
+    left:  15px;
+}
+.slick-prev:before {
+    content: '\00AB';
+}
+/* [dir='rtl'] .slick-prev:before {
+    content: '→';
+} */
+.slick-next {
+    right: 15px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+   line-height: 1;
+ color: #000000;
+ transition: all 0.3s ease .0s;
+ }
+.slick-next:before {
+    content: '\00BB';
+}
+/* [dir='rtl'] .slick-next:before {
+    content: '←';
+} */
+.slick-prev:hover:before, .slick-next:hover:before {
+  color: rgb(163, 163, 163);
+  /* background-color: #606060; */
+}
+/* Dots */
+ 
+.slick-dots {
+  text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button //  
+{
+    font-size: 0;
+    line-height: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background-color: rgb(166, 166, 166); // основной цвет
+    border-radius: 50%;
+    transition: all 0.3s ease .0s;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  background-color: rgb(82, 82, 82);
+}
+.slick-dots li button:focus {
+ background-color: $blue; //  цвет при клике
+}
+// Для показа активных инд. в режиме Auto - button важно в конце
+.slick-dots li.slick-active button {
+ background-color: $blue;
+}
+
+@media screen and (max-width: 700px) {  
+  .slick-list {
+ 
+    margin: 0px 0px 20px 0px;
+}
+  }

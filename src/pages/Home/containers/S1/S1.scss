@@ -1,0 +1,232 @@
+
+.home-one {
+  position: relative;
+}
+
+.h-one__row {
+  position: absolute;
+  top: 0;
+  padding: 100px 0px 0px 0px;
+}
+
+.h-one__title {
+  max-width: 700px;
+  margin: 30px 0px 0px 0px;
+}
+
+.h-one__text {
+  max-width: 700px;
+  margin: 30px 0px 0px 0px;
+  line-height: 150%;
+}
+
+.h-one__buttonsRow {
+  display: flex;
+  margin: 90px 0px 0px 0px;
+}
+
+.h-one__firstButton {
+  margin: 0px 20px 0px 0px;
+}
+
+.h-one__secondButton {
+  color: #679BA4;
+  background-color: #ffffff;
+  border: 1px solid #679BA4;
+}
+
+.h-one__secondButton:hover {
+  background-color: $blue;
+  border: 1px solid rgba(103, 155, 164, 0);
+  color: #ffffff;
+}
+
+///////////////
+
+
+// .home-one .bottomItem {
+//   background-color: red;
+//  }
+//  .secondExpert .bottomItem { // ниже предыдущего ставить  
+//   background-color: blue;
+//  }
+
+ 
+
+
+//////////////
+
+.h-one__backgroungImage {
+  overflow: hidden;
+  max-width: 1920px;
+  height: 1080px; // из за этого нижний сегнмент секции уходит ниже при сжатии
+}
+
+.h-one__backgroungImage img {
+  max-width: 100%;
+  object-fit: cover;
+ object-position:  0px 0px; // добавил
+}
+@media screen and (max-width: 1800px) {
+  .h-one__backgroungImage img {
+    max-width: none;
+    // max-width: unset; // или это - уберет ограничение по ширине и можно двигать фото
+    object-position: -100px 0px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .h-one__backgroungImage img {
+   object-position: -300px 0px; // и далее сдвигаем
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .h-one__backgroungImage img {
+    // max-width: none;
+    max-width: unset;
+    object-position: -500px 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .h-one__backgroungImage img {
+    object-position: -650px 0px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .h-one__title {
+    max-width: 500px;
+    margin: 30px 0px 0px 0px;
+    font-size: 60px;
+  }
+  .h-one__text {
+    max-width: 500px;
+    margin: 30px 0px 0px 0px;
+    line-height: 150%;
+  }
+  .h-one__backgroungImage img {
+    object-position: -810px 0px;
+  }
+  .h-one__bottomItem {
+    flex-direction: column;
+  }
+  .h-o-bottomItem__right {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .h-one__backgroungImage img {
+    object-position: -950px 0px;
+  }
+  .h-one__smallTitle {
+    font-size: 18px;
+    max-width: 300px;
+  }
+  .h-one__title {
+    max-width: 300px;
+    margin: 20px 0px 0px 0px;
+    font-size: 40px;
+  }
+  .h-one__text {
+    max-width: 300px;
+    margin: 30px 0px 0px 0px;
+    line-height: 150%;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .h-one__backgroungImage img {
+    object-position: -1000px 0px;
+  }
+  .h-o-bottomItem__title {
+    font-family: b;
+    font-size: 20px;
+    line-height: 100%;
+  }
+  .h-o-bottomItem__text {
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 650px) {
+  .h-one__bottomRow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 -10px;
+    margin-top: -80px;
+  }
+  .h-one__text {
+    max-width: 300px;
+    margin: 30px 0px 0px 0px;
+    line-height: 150%;
+  }
+  .h-one__bottomItem {
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .h-one__backgroungImage {
+    height: auto;
+  }
+  .h-one__backgroungImage img {
+    object-position: initial;
+    width: 100%;
+  }
+  .h-one__row {
+    position: absolute;
+    top: 0;
+    padding: 30px 0px 0px 0px;
+  }
+  .h-one__title {
+    max-width: 300px;
+    margin: 0px 0px 0px 0px;
+    font-size: 35px;
+  }
+  .h-one__text, .h-one__smallTitle {
+    display: none;
+  }
+  .h-one__buttonsRow {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+  }
+  .h-one__secondButton, .h-one__firstButton {
+    margin: 10px 0px 0px 0px;
+    width: 150px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .h-one__bottomRow {
+    position: relative;
+    display: flex;
+    margin: 0 -10px;
+    margin-top: 0px;
+  }
+  .h-one__bottomItem {
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+  }
+  .h-o-bottomItem__right {
+    margin: 0px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .h-one__row {
+    position: absolute;
+    top: 0;
+    padding: 20px 0px 0px 0px;
+  }
+  .h-one__title {
+    max-width: 200px;
+    margin: 0px 0px 0px 0px;
+    font-size: 25px;
+    line-height: 100%;
+  }
+  .h-one__buttonsRow {
+    margin: 5px 0px 0px 0px;
+  }
+}

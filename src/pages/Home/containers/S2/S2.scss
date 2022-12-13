@@ -1,0 +1,101 @@
+.home-two {
+  padding: 160px 0px 0px 0px;
+}
+
+.h-t__row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.h-t__left {
+  position: relative;
+  flex-basis: 50%;
+  padding: 0px 0px 150px 0px;
+  z-index: 2;
+}
+
+.h-t__title {
+  margin: 40px 0px 0px 0px;
+}
+
+.h-t__text {
+  margin: 40px 0px 0px 0px;
+}
+
+.h-t__list {
+  margin: 40px 0px 0px 0px;
+}
+
+.h-t__list li {
+  font-size: 18px;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+
+.h-t__list li::before {
+  content: "";
+  background: url('../../../../assets/img/icons/check-list.svg') 0px 3px no-repeat;
+  width: 35px;
+  height: 30px;
+  background-size: 60%;
+}
+
+.h-t__button {
+  margin: 40px 0px 0px 0px;
+}
+
+.h-t__right {
+  position: relative;
+  flex-basis: 50%;
+}
+
+.h-t__right img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-two {
+    padding: 90px 0px 0px 0px;
+  }
+  .h-t__left {
+    padding: 0px 0px 50px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-two {
+    padding: 70px 0px 0px 0px;
+  }
+  .h-t__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .h-t__right img {
+    width: 50%;
+    margin: -150px 0px 0px 150px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home-two {
+    padding: 50px 0px 0px 0px;
+  }
+  .h-t__text {
+    margin: 20px 0px 0px 0px;
+  }
+  .h-t__title {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .h-t__list li {
+    font-size: 16px;
+    display: flex;
+    margin: 0px 0px 0px 0px;
+  }
+  .h-t__list {
+    margin: 30px 0px 0px 0px;
+  }
+  .h-t__right img {
+    margin: -100px 0px 0px 150px;
+  }
+}

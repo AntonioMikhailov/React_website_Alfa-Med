@@ -1,0 +1,161 @@
+.home-9 {
+  padding: 110px 0px 30px 0px;
+}
+
+.h9__title {
+  max-width: 500px;
+  margin: 30px 0px 0px 0px;
+}
+
+.h9__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 -20px;
+  margin-top: 40px;
+}
+
+.h9-row__left {
+  flex-basis: 66.6%;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.h9-left__item {
+  flex-basis: 50%;
+  margin: 0px 0px 0px 0px;
+}
+
+.h9-item__title {
+  font-family: b;
+  font-size: 20px;
+}
+
+.h9-item__adress {
+  margin: 10px 0px 50px 0px;
+  font-size: 18px;
+}
+
+.h9-row__right {
+  flex-basis: 33.3%;
+  padding: 0 20px;
+}
+
+.form-span {
+  height: 15px;
+  margin: 5px 0px 0px 0px;
+   
+}
+.form-sec9  span {
+  display: block;
+  color: $blue;
+  font-size: 14px;
+ }
+
+.form-title {
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+  color: $blue;
+  
+}
+
+.h9__input {
+  width: 100%;
+  height: 40px;
+  background-color: #E9E9E9;
+  border: none;
+   margin: 20px 0px 0px 0px;
+}
+
+.h9__input::placeholder, .h9__textarea::placeholder {
+  color: rgb(82, 82, 82);
+}
+
+.h9__textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  background-color: #E9E9E9;
+   margin: 20px 0px 0px 0px;
+}
+
+.h9__button {
+  margin: 40px 0px 0px 0px;
+}
+.warn-btn {
+  background-color: rgb(217, 43, 43);
+  }
+  
+
+@media screen and (max-width: 900px) {
+  .h9-row__left {
+    flex-basis: 100%;
+    margin: 0 -10px;
+  }
+  .h9-left__item {
+    padding: 0 10px;
+  }
+  .h9-row__right {
+    flex-basis: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-9 {
+    padding: 80px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .h9-item__adress {
+    margin: 10px 0px 30px 0px;
+    font-size: 16px;
+  }
+  .h9-row__right {
+    flex-basis: 60%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .home-9 {
+    padding: 50px 0px 0px 0px;
+  }
+  .h9-left__item {
+    flex-basis: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  .h9-row__right {
+    flex-basis: 100%;
+  }
+  .h9__row {
+    margin-top: 30px;
+  }
+  .h9-item__adress {
+    margin: 10px 0px 30px 0px;
+  }
+  .h9__button {
+    margin: 30px 0px 0px 0px;
+  }
+}
+
+.footer {
+  background-color: $dark_blue;
+  padding: 10px 0px 10px 0px;
+}
+
+.footer-copyright {
+  color: #cecece;
+  font-size: 14px;
+  letter-spacing: 0.08rem;
+}
+
+.footer-copyright span {
+  white-space: nowrap;
+  color: #cecece;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+ 

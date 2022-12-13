@@ -1,0 +1,122 @@
+.departComp-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  margin-top: 60px;
+}
+
+.departComp-column {
+  padding: 0 10px;
+  flex-basis: 33.3%;
+  margin: 0px 0px 20px 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.departComp-column:hover .departComp-item {
+  border: 1px solid $blue;
+}
+
+.departComp-column:hover .departComp-itemIcon img {
+  animation-name: iconAnime;
+  animation: iconAnime 1s infinite;
+}
+
+@keyframes iconAnime {
+  50% {
+    transform: scale(110%);
+  }
+}
+.departComp-column:hover .departComp-itemTilte {
+  color: $blue;
+}
+
+.departComp-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 372px;
+  padding: 30px 20px 20px 40px;
+  border: 1px solid #C2C2C2;
+  transition: all 0.3s ease 0s;
+}
+
+.departComp-itemIcon img {
+  // width: 80px;
+  height: 80px;
+}
+
+.departComp-itemTilte {
+  margin: 20px 0px 0px 0px;
+  font-family: b;
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.departComp-iconText {
+  margin: 20px 0px 0px 0px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .home-four {
+    padding: 120px 0px 0px 0px;
+  }
+  .departComp-column {
+    padding: 0 10px;
+    flex-basis: 50%;
+    margin: 0px 0px 20px 0px;
+  }
+  .departComp-item {
+    min-height: auto;
+    padding: 30px 20px 20px 40px;
+    border: 1px solid #C2C2C2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-four {
+    padding: 80px 0px 0px 0px;
+  }
+  .departComp-row {
+    margin-top: 30px;
+  }
+  .departComp-title {
+    margin: 20px 0px 0px 0px;
+    max-width: 570px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-four {
+    padding: 50px 0px 0px 0px;
+  }
+  .departComp-column {
+    padding: 0 10px;
+    flex-basis: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .departComp-item {
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #C2C2C2;
+  }
+  .departComp-itemIcon img {
+    width: 60px;
+  }
+  .h-f-item__row {
+    display: flex;
+  }
+  .h-f-itemLeft {
+    margin: 0px 25px 0px 0px;
+  }
+  .departComp-iconText {
+    margin: 10px 0px 0px 0px;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-four {
+    padding: 40px 0px 0px 0px;
+  }
+  .h-f-item__row {
+    display: flex;
+    display: block;
+  }
+}

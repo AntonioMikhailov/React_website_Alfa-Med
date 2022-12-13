@@ -1,0 +1,51 @@
+
+.carousel-main {
+  max-width: 100%;
+  margin: 50px 0px 0px 0px;
+   overflow: hidden;
+}
+
+.slider-row {
+  position: relative;
+ 
+}
+
+.slider-image {
+  flex-basis: 20%;
+  color: rgb(0, 0, 0);
+  padding: 0px 10px 0px 10px;
+}
+
+.slider-imagePhoto img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-imageName {
+  font-family: b;
+  font-size: 20px;
+  margin: 15px 0px 0px 0px;
+}
+
+@media screen and (max-width: 700px) {  
+  .carousel-main {
+ 
+    margin: 30px 0px 0px 0px;
+  
+  }
+ 
+  .slider-imageName {
+    font-family: b;
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
+  }
+  .slider-imageText {
+    font-size: 14px;
+  }
+  
+ 
+  }
+ 
+ 
+ 
+

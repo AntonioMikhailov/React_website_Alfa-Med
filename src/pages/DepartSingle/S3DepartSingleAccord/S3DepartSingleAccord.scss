@@ -1,0 +1,99 @@
+.depart-single-3 {
+  padding: 90px 0px 0px 0px;
+}
+
+.ds3__accordItem {
+  cursor: pointer;
+  margin: 0px 0px 20px 0px;
+}
+
+.ds3__titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+  transition: all 0.3s ease 0s;
+}
+
+.ds3__titleRow:hover {
+  background-color: #DEF5FA;
+  border: 1px solid rgba(190, 190, 190, 0);
+}
+
+.ds3__titleActive {
+  background-color: #DEF5FA;
+  border: 1px solid rgba(190, 190, 190, 0);
+}
+
+.ds3__itemTitle {
+  font-family: b;
+  font-size: 28px;
+}
+
+.ds3__itemPrice {
+  margin-left: auto;
+  margin-right: 15px;
+  font-family: b;
+  font-size: 28px;
+}
+
+.ds3__itemIcon {
+  background: url('../../../assets/img/icons/departments/plus-accordeon.svg') 0px 2px no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+  transition: all 0.3s ease 0s;
+  margin: 0px 10px 0px 0px;
+}
+
+.ds3-iconActive {
+  background: url('../../../assets/img/icons/departments/minus-accordeon.svg') 0px 2px no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+}
+
+.ds3__textWrapper {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+  transform-origin: top;
+}
+
+.ds3__text {
+  transform-origin: top;
+  padding: 0px 0px 20px 0px;
+}
+
+.ds3__text span {
+  font-family: b;
+}
+
+@media screen and (max-width: 768px) {
+  .ds3__itemTitle, .ds3__itemPrice {
+    font-size: 24px;
+  }
+  .ds3__itemPrice {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .ds3__text, .ds3__text span {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .depart-single-3 {
+    padding: 20px 0px 0px 0px;
+  }
+  .ds3__itemTitle, .ds3__itemPrice {
+    font-size: 20px;
+  }
+  .ds3__itemPrice {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .ds3__text, .ds3__text span {
+    font-size: 16px;
+  }
+}
